@@ -43,5 +43,9 @@ public class _33HashMap {
         for(String value: map.values()) {
 
         }
+
+        // For the object we can use hashCode method to store as key of HashMap or HashSet
+        _33HashMap h = new _33HashMap();
+        int hash = h.hashCode(); // Which uniquely identify object of class _33HashMap
     }
 }
