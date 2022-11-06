@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,6 +34,11 @@ public class _33HashMap {
             int key = values.getKey();
             String value = values.getValue();
         }
+
+        // Converting keys to String[] array
+        // First we need to convert it to the object array
+        Object[] obj = map.values().toArray();
+        String[] stringArr = Arrays.copyOf(obj, obj.length, String[].class);
 
         // To iterate only keys
         for(Integer key: map.keySet()) {
